@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="FRM_PARAM_CAMPOS_CADASTRO_PRODUTO.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<i class="flaticon flaticon-edit-square icon-thumbnail-xs" aria-hidden="true"></i>
+	<i class="flaticon flaticon-file-settings icon-lg" aria-hidden="true"></i>
+<body>
+		<div class="fluig-style-guide">
+			<form name="form" role="form">	
+				<div class="panel panel-default">
+					<div class="panel-heading">                            
+						<h4 class="panel-title">                                                                     
+						<h3><span class="fluigicon fluigicon-community-config fluigicon-md"></span>Cadastrar Campos</h3>                                	        
+						</h4>
+					</div>			
+						<div class="panel-body">
+							<div class="row fs-overflow-x-auto">
+								<div class="form-group col-md-12">
+									<input type="hidden" name="teste" id="teste">			
+									<table tablename="tbParamCampos" id="tbParamCampos" class="table table-hover" noaddbutton=true nodeletebutton=true>
+										<thead>
+											<tr>
+												<td></td>
+												<td><b><label for="campo">Campo</label></b></td>
+												<td><b><label for="cpObrigatorio">Campo Obrigatorio</label></b></td>
+												<td><b><label for="cpVisivel">Campo Visível</label></b></td>
+												<td><b><label for="cpEditavel">Campo Editável</label></b></td>
+												<td><b><label for="cpIntegra">Integra</label></b></td>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td style="width: 10%"><div id="delete" onclick="deleteTabela(this)"><span class="fluigicon fluigicon-trash fluigicon-md botao_remove"></span></div></td>
+												<td style="width: 10%">
+													<input type="zoom" class='form-control' id="campo" name="campo"
+														data-zoom="{'displayKey':'CAMPOS', 
+														'datasetId':'DTS_PARAM_CAMPOS_CADASTRO_PRODUTO',
+														'placeholder':'Escolha o Campo',
+														'fields':[
+														{'field':'CAMPOS', 
+														'label':'Código'}
+														]}" />
+												</td>
+												<td style="width: 10%">
+													<input type="text" class="form-control" id="cpObrigatorio" name="cpObrigatorio"/>
+												</td>
+												<td style="width: 10%">
+													<input type="text" class="form-control" id="cpVisivel" name="cpVisivel"/>
+												</td>
+												<td style="width: 10%">
+													<input type="text" class="form-control" id="cpEditavel" name="cpEditavel"/>
+												</td>
+												<td style="width: 10%">
+													<select class="form-control" id="cpIntegra" name="cpIntegra">
+														<option></option>
+														<option value="S">Sim</option>
+														<option value="N">Não</option>
+													</select>
+												</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td>
+													<button class="btn btn-primary" id="add_campo_param" onclick="addTabela('tbParamCampos')">Adicionar</button>   	
+												</td>
+												<td colspan="5">
+												</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">                            
+							<h4 class="panel-title">                                                                     
+							<h3><span class="fluigicon fluigicon-community-config fluigicon-md"></span>Filiais</h3>                                	        
+							</h4>
+						</div>	
+						<div class="panel-body">
+							<div class="form-group col-md-12">
+								<input type="hidden" name="teste2" id="teste2">			
+								<table tablename="tbFiliais" id="tbFiliais" class="table table-hover" noaddbutton=true nodeletebutton=true>
+										<thead>
+											<tr>
+												<td></td>
+												<td><b><label for="cpNome">Nome</label></b></td>
+												<td><b><label for="cpCodigo">Código</label></b></td>				
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="width: 5%"><div id="delete" onclick="deleteTabela(this)"><span class="fluigicon fluigicon-trash fluigicon-md botao_remove"></span></div></td>
+
+											<td style="width: 10%">
+												<input type="text" class="form-control" id="cpNome" name="cpNome"/>
+											</td>
+											<td style="width: 10%">
+												<input type="text" class="form-control" id="cpCodigo" name="cpCodigo"/>
+											</td>	
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td>
+												<button class="btn btn-primary" id="add_campo_param" onclick="addTabela('tbFiliais')">Adicionar</button>   	
+											</td>
+											<td colspan="5">
+											</td>
+										</tr>
+									</tfoot>
+						     </table>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+		</div>
+			</div>	
+				</div>	
+					</div>
+						</form>
+							</div>
+</body>
+</html>

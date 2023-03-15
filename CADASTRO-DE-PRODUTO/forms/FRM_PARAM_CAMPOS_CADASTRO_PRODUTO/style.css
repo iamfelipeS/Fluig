@@ -1,0 +1,24 @@
+.collapsible-nblue {
+	background: #229EAC;
+	cursor: pointer;
+}
+
+.active.collapsible-nblue, .collapsible-nblue:hover {
+	background-color: #1b7a85;
+}
+
+.collapsible-lblue {
+	background: #4EBFAD;
+	cursor: pointer;
+}
+
+.active.collapsible-lblue, .collapsible-lblue:hover {
+	background-color: #358276;
+}
+
+.panel-heading #row_left {
+	margin-left: -25px;
+    border-radius: 100%;
+    
+}
+
