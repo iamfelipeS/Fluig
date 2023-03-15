@@ -2,16 +2,20 @@
 
 Cadastro de Produtos com integração ERP Protheus.
 
+<br>
+
+
 ## 🔨 Seguir documentação TOTVS para exportar o formulário para o Fluig:
 
 https://tdn.totvs.com/pages/releaseview.action?pageId=239018344#Exportandoformul%C3%A1rios-3
 
 
+<br>
+
 
 ## 1.	Botões de ação CRUD (Consultar, Adicionar, Alterar e Bloquear)
 
  ![image](https://user-images.githubusercontent.com/127339296/225419187-7b31c3ad-f346-423b-9969-81dacc56aeef.png)
-
 
 
 ## 2.	Aba – Cadastrais:
