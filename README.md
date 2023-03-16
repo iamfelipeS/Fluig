@@ -7,7 +7,7 @@ Cadastro de Produtos com integração ERP Protheus.
 
 ## 🔨 Seguir documentação TOTVS para exportar o formulário para o Fluig:
 
-https://tdn.totvs.com/pages/releaseview.action?pageId=239018344#Exportandoformul%C3%A1rios-3
+[Exportando projetos para o Fluig](https://tdn.totvs.com/pages/releaseview.action?pageId=239018344#Exportandoformul%C3%A1rios-3)
 
 
 <br>
